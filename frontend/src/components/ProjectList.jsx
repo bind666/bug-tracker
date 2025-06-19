@@ -24,7 +24,8 @@ const ProjectList = () => {
             const res = await fetchProjects();
             setProjects(res.data.data);
         } catch {
-            toast.error("Failed to fetch projects");
+            // toast.error("Failed to fetch projects");
+            console.log("Failed to fetch projects");
         }
     };
 
